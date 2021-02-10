@@ -1,0 +1,154 @@
+body {
+    background-color:bisque;
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+section {
+    display:flex;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 50px;
+}
+
+.container-left {
+    display:flex;
+}
+
+img {
+    margin-top: 200px;
+    max-width: 400px;
+    border-radius: 50%;
+    animation: img 2.5s ease infinite;
+    animation-fill-mode: none;
+}
+
+@keyframes img {
+    0% {transform: scale(1);}
+    50% {transform:scale(1.2);}
+    100% {transform: scale(1);}
+}
+
+.container-middle {
+    display:flex;
+    flex-direction: column;
+}
+
+.container-right{
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+    justify-content: end;
+    margin-top: 150px;
+    width: 100%;
+    min-height: 300px;
+    padding: 30px 30px;
+    background-color: burlywood;
+}
+
+h1 {
+    display: flex;
+    font-family: 'Crimson Pro', serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 24px;
+}
+
+h3 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 24px;
+}
+
+.welcome {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 24px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.label {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+option {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.checkbox-info {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.input-field, .select {
+    box-sizing: border-box;
+	width: 85%;
+	min-height: 32px;
+    margin-bottom: 10px;
+    background-color:bisque;
+    border: none;
+}
+
+.select-wrap {
+    box-sizing: border-box;
+    width: 100%;
+    position: relative;
+}
+
+.select {
+    display:block;
+	height: 32px;
+	border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+	cursor: pointer;
+}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    letter-spacing: 10px;
+    background-color: bisque;
+    height: 50px;
+    width: 175px;
+    border: none;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: blanchedalmond;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.2s;
+}
