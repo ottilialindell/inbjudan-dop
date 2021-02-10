@@ -4,12 +4,13 @@ body {
 
 main {
     display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
 section {
     display:flex;
-    justify-content: center;
 }
 
 header{
@@ -26,11 +27,11 @@ header{
 }
 
 img {
-    margin-top: 200px;
-    max-width: 400px;
+    max-width: 300px;
     border-radius: 50%;
     animation: img 2.5s ease infinite;
     animation-fill-mode: none;
+    margin-right: 50px;
 }
 
 @keyframes img {
@@ -42,6 +43,8 @@ img {
 .container-middle {
     display:flex;
     flex-direction: column;
+    max-width: 350px;
+    padding: 30px 70px;
 }
 
 .container-right{
@@ -49,17 +52,28 @@ img {
 	flex-direction: column;
 	align-items: stretch;
     justify-content: end;
-    margin-top: 150px;
-    width: 100%;
+    margin-top: 50px;
+    max-width: 350px;
     min-height: 300px;
     padding: 30px 30px;
     background-color: burlywood;
 }
 
+@keyframes right {
+    0% {transform: scale(1);}
+    50% {transform:scale(1.05);}
+    100% {transform: scale(1);}
+}
+
+.container-right:hover {
+    animation: right 2.7s ease-in-out;
+    animation-fill-mode: none;
+}
+
 h1 {
     display: flex;
     font-family: 'Crimson Pro', serif;
-    font-size: 24px;
+    font-size: 32px;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 24px;
@@ -73,9 +87,19 @@ h3 {
     line-height: 24px;
 }
 
-.welcome {
+h6 {
     font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    line-height: 24px;
+}
+
+.welcome {
+    font-family: 'Crimson Pro', serif;
     font-size: 16px;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 5px;
     line-height: 24px;
@@ -84,6 +108,7 @@ h3 {
 p {
     font-family: 'Raleway', sans-serif;
     font-size: 12px;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 24px;
@@ -105,14 +130,9 @@ option {
     font-size: 14px;
 }
 
-.checkbox-info {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
-}
-
 .input-field, .select {
     box-sizing: border-box;
-	width: 85%;
+	width: 100%;
 	min-height: 32px;
     margin-bottom: 10px;
     background-color:bisque;
@@ -143,12 +163,12 @@ option {
     height: 50px;
     width: 175px;
     border: none;
-    margin-left: 150px;
+    margin-left: 60px;
     margin-top: 20px;
 }
 
 .button:hover {
-    background-color: blanchedalmond;
+    background-color: #939384;
     transition: all 0.5s ease-in-out;
     transition-delay: 0.2s;
 }
