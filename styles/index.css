@@ -66,7 +66,7 @@ img {
 }
 
 .container-right:hover {
-    animation: right 2.7s ease-in-out;
+    animation: right 2.7s linear;
     animation-fill-mode: none;
 }
 
